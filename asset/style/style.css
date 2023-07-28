@@ -1,0 +1,244 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.body{
+    width: 100%;
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   align-content: center;
+}
+.page{
+    width: 97%;
+    margin-top: 2rem;
+    height:97vh;
+    background-color:hsla(195, 53%, 79%,0.1);
+    border: 1px solid hsla(195, 53%, 79%,0.1) ;
+    border-radius: 7px;
+}
+nav{
+    width: 100%;
+    /* height: 4rem; */
+}
+ul{
+    display: flex;
+   margin-left: 5rem;
+    align-items: center;
+    color:  rgb(65, 17, 132);
+}
+
+.list{
+    margin-left: 28rem;
+    display: flex;
+}
+#menu{
+    display: none;
+}
+#close{
+    display: none;
+}
+li{
+    margin-left: 2rem;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 550;
+}
+li a{
+    text-decoration: none;
+    color: hsla(265, 43%, 24%, 0.7);
+}
+
+/* landing pages */
+.landing-page{
+
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-content: center;
+}
+.content{
+    display: flex;
+    width: 85%;
+}
+.txt{
+    width: 70%;
+}
+.border p{
+    color: hsla(0, 0%, 96%,0.6);
+    width: 52%; 
+    font-size: 17px;
+    padding: 0.2rem 0;
+    border-radius: 50px;
+    text-align: center;
+    border: 2px solid hsl(265, 58%, 18%);
+    background-color:hsl(265, 63%, 18%) ;
+}
+.border a{
+    color: hsla(0, 0%, 96%, 0.6);
+}
+.txt h2{
+    font-size: 46px;
+    width: 80%;
+    margin-top: 1rem;
+    color: rgb(46, 11, 79);
+}
+.txt .text p{
+    margin-top: -1.5em;
+    font-size: 17px;
+    width: 85%;
+    margin-top: 1rem;
+    color: rgba(34, 8, 59, 0.6);
+}
+.img{
+    width: 30%;
+}
+.img img{
+    width: 100%;
+    height: 20rem;
+}
+
+form{
+    width: 70%;
+    margin-top: 3rem;
+}
+input{
+    padding: 1rem 5rem 1rem .9rem;
+    border:1px solid lightgray ;
+    border-radius: 4px;
+}
+ button {
+    color: white;
+    text-decoration: none;
+ }
+   
+form button{
+    padding:.9rem 1rem ;
+    border-radius: 4px;
+    margin-left: .7rem;
+    border:1px solid hsl(265, 58%, 18%);
+    background-color:hsl(265, 63%, 18%) ; 
+}
+.used{
+    margin-top: 4rem;
+}
+.used h4{
+    font-size: 16px;
+    color: gray;
+}
+.used img{
+    width: 2.1rem;
+    margin-top: 1rem;
+   
+}
+
+@media  screen and (max-width: 1000px) {
+    .body{
+        /* overflow-x: hidden; */
+      height: 40rem;
+    }
+    .page{
+        height: 40rem;
+        margin-top: .5rem;
+    }
+    nav{
+        padding-top: 1rem;
+    }
+    ul{
+        margin: 0;
+        position: relative;
+    }
+    .list{
+        flex-direction: column;
+        margin: 0;
+        position: absolute;
+        width: 80%;
+        background-color: white;
+        height: 24rem;
+        top: 5px; 
+        display: none;
+     
+    }
+    li{
+        background-color: white;
+       margin:2rem 0 2rem 2rem ;
+       font-size: 20px;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        right: 1rem;
+    }
+    #close{
+        width: 1rem;
+        position: absolute;
+        right: 1rem;
+        display: none;
+    }
+    .landing-page{
+        margin-top: 1.5rem;
+    }
+   .content{
+
+       flex-direction: column;
+    }
+    .txt{
+        width: 100%;
+        text-align: center;
+    }
+    .border p{
+        width: 100%;
+    }
+    .txt h2{
+        font-size: 35px;
+        width: 100%;
+       
+    }
+    .txt .text p{
+        margin-top: .5em;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+    form{
+        width: 100%;
+    }
+    form input{
+        margin-bottom: 1.5rem;
+        padding: 1rem 6.5rem 1rem 1rem;
+    }
+   
+   form a{
+    padding: .9rem 3.6rem;
+    font-size: 17px;
+   }
+   .img img{
+       display: none;
+   }
+   .used{
+    margin-top: 1rem;
+}
+}
+
+@media screen and (max-width:630px){
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:310px){
+    form input{
+        margin-bottom: 1.5rem;
+        padding: 1rem 4.5rem 1rem 1rem;
+    }
+   form a{
+    padding: .9rem .6rem;
+    font-size: 17px;
+   }
+}
